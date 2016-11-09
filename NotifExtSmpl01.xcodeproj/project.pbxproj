@@ -522,6 +522,7 @@
 				CODE_SIGN_ENTITLEMENTS = NotifExtSmpl01/NotifExtSmpl01.entitlements;
 				DEVELOPMENT_TEAM = 8Q9JB68VQH;
 				INFOPLIST_FILE = NotifExtSmpl01/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.lib-gate.NotifExtSmpl01";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -537,6 +538,7 @@
 				CODE_SIGN_ENTITLEMENTS = NotifExtSmpl01/NotifExtSmpl01.entitlements;
 				DEVELOPMENT_TEAM = 8Q9JB68VQH;
 				INFOPLIST_FILE = NotifExtSmpl01/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.lib-gate.NotifExtSmpl01";
 				PRODUCT_NAME = "$(TARGET_NAME)";
