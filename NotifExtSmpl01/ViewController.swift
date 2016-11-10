@@ -16,8 +16,8 @@ class ViewController: UIViewController {
         let foo: String?
         foo = nil
         
-        var a: String? = "nobita"
-        a = nil; a="doraemon"
+        var b: String? = "nobita"
+        b = nil; b="doraemon"
     }
 
     override func didReceiveMemoryWarning() {
