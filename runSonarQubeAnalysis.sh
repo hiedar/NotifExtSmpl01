@@ -9,13 +9,13 @@ set -e
 # And run the analysis
 # It assumes that the project uses Maven and has a POM at the root of the repo
 echo "CIRCLE_BRANCH: ${CIRCLE_BRANCH}"
-echo "CI_PULL_REQUEST: ${CI_PULL_REQUEST}"
+echo "CIRCLE_PR_NUMBER: ${CIRCLE_PR_NUMBER}"
 echo "GITHUB_TOKEN: ${GITHUB_TOKEN}"
 echo "SONAR_TOKEN: ${SONAR_TOKEN}"
 echo ""
 cat /usr/local/Cellar/sonar-scanner/2.8/libexec/conf/sonar-scanner.properties
 
-if [ "${CI_PULL_REQUEST}" = "" ]; then
+if [ "${CIRCLE_PR_NUMBER}" = "" ]; then
     # => This will run a full analysis of the project and push results to the SonarQube server.
     #
     # Analysis is done only on master so that build of branches don't push analyses to the same project and therefore "pollute" the results
@@ -25,7 +25,7 @@ if [ "${CI_PULL_REQUEST}" = "" ]; then
         -Dsonar.github.oauth=$GITHUB_TOKEN \
         -Dsonar.projectVersion=$CIRCLE_BRANCH
     
-elif [ "$CI_PULL_REQUEST" != "" ] && [ -n "${GITHUB_TOKEN}" ]; then
+elif [ "$CIRCLE_PR_NUMBER" != "" ] && [ -n "${GITHUB_TOKEN}" ]; then
     # => This will analyse the PR and display found issues as comments in the PR, but it won't push results to the SonarQube server
     #
     # For security reasons environment variables are not available on the pull requests
@@ -37,6 +37,6 @@ elif [ "$CI_PULL_REQUEST" != "" ] && [ -n "${GITHUB_TOKEN}" ]; then
         -Dsonar.login=$SONAR_TOKEN \
         -Dsonar.analysis.mode=preview \
         -Dsonar.github.oauth=$GITHUB_TOKEN \
-        -Dsonar.github.pullRequest=$CI_PULL_REQUEST
+        -Dsonar.github.pullRequest=$CIRCLE_PR_NUMBER
 fi
 # When neither on master branch nor on a non-external pull request => nothing to do
