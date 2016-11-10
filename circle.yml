@@ -5,7 +5,7 @@ machine:
 dependencies:
   pre:
     - brew update || brew update
-    - brew install sonar-scanner
+    - brew install sonar sonar-scanner
 
   post:
     - sh ./runSonarQubeAnalysis.sh
