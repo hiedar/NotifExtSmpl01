@@ -1,12 +1,12 @@
 <?php
 if(defined('CURL_HTTP_VERSION_2_0')){
 
-    $device_token   = '232aabf3459ea8250b3aabb131ae9b3122dd34b22326e471ac60f2f36286286b';
+    $device_token   = '0ee8736313b96cb098378978c45c74732d80dce2904222fc2582995e31f3e0ca';
     $pem_file       = '/Applications/developer/sample/NotifExtSmpl01/cert/development_jp.co.lib-gate.NotifExtSmpl01.pem';
     // $pem_secret     = 'your pem secret'; // パスワードを設定している場合は必要
     $apns_topic     = 'jp.co.lib-gate.NotifExtSmpl01';
 
-    $alert = '{"aps":{"alert":{"title":"TitleSample","subtitle":"SubtitleSample","body":"BodySample"},"badge":1, "mutable-content":1}, "data": "https://raw.githubusercontent.com/onevcat/Kingfisher/master/images/kingfisher-5.jpg"}';
+    $alert = '{"aps":{"alert":{"title":"TitleSample","subtitle":"SubtitleSample","body":"BodySample"},"badge": 2, "sound": "default" ,"mutable-content":1}, "data": "https://raw.githubusercontent.com/onevcat/Kingfisher/master/images/kingfisher-6.jpg"}';
 
     // $alert = '{"aps":{"alert":{"title":"Hieda-dayo10","subtitle":"subtitle4","body":"Ryuichi-dattebayo4"},"badge":1,"shouldAlwaysAlertWhileAppIsForeground": 1, "mutable-content":1}, "data": "https://raw.githubusercontent.com/onevcat/Kingfisher/master/images/kingfisher-5.jpg"}';
     $url = "https://api.development.push.apple.com/3/device/$device_token";
