@@ -55,15 +55,11 @@ class NotificationService: UNNotificationServiceExtension {
                                 
                                 bestAttemptContent.userInfo["shouldAlwaysAlertWhileAppIsForeground"] = "YES"
                                 print(bestAttemptContent.userInfo)
-                                bestAttemptContent.badge = 20
-//                                bestAttemptContent.
                                 
                                 let attachment = try UNNotificationAttachment(identifier: "tiqav2",
                                                                               url: writePath,
                                                                               options: [UNNotificationAttachmentOptionsTypeHintKey:kUTTypePNG])
                                 bestAttemptContent.attachments.append(attachment)
-                                
-//                                contentHandler(bestAttemptContent)
                                 
                                 let movUrl = Bundle.main.url(forResource: "sample", withExtension: "m4v")
                                 let attachment2 = try UNNotificationAttachment(identifier: "tiqav",
@@ -79,6 +75,7 @@ class NotificationService: UNNotificationServiceExtension {
                             if let bestAttemptContent = self.bestAttemptContent {
                                 print("\n *** ( AFTER 2 )bestAttemptContent: \(bestAttemptContent)")
                                 contentHandler(bestAttemptContent)
+                                
                             }
                         }
                     } catch let error {
