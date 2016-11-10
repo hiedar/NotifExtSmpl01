@@ -17,7 +17,7 @@ if [ "${CIRCLE_BRANCH}" = "master" ] && [ "${CI_PULL_REQUEST}" = "false" ]; then
     #
     # Analysis is done only on master so that build of branches don't push analyses to the same project and therefore "pollute" the results
     echo "Starting analysis by SonarQube..."
-    sonar-scanner
+    sonar-scanner -X
         -Dsonar.login=$SONAR_TOKEN \
         -Dsonar.github.oauth=$GITHUB_TOKEN \
         -Dsonar.projectVersion=$CIRCLE_BRANCH
@@ -30,7 +30,7 @@ elif [ "$CI_PULL_REQUEST" != "false" ] && [ -n "${GITHUB_TOKEN}" ]; then
     # http://docs.travis-ci.com/user/pull-requests/#Security-Restrictions-when-testing-Pull-Requests
     # That's why the analysis does not need to be executed if the variable GITHUB_TOKEN is not defined.
     echo "Starting Pull Request analysis by SonarQube..."
-    sonar-scanner
+    sonar-scanner -X
         -Dsonar.login=$SONAR_TOKEN \
         -Dsonar.analysis.mode=preview \
         -Dsonar.github.oauth=$GITHUB_TOKEN \
