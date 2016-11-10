@@ -12,6 +12,8 @@ echo "CIRCLE_BRANCH: ${CIRCLE_BRANCH}"
 echo "CI_PULL_REQUEST: ${CI_PULL_REQUEST}"
 echo "GITHUB_TOKEN: ${GITHUB_TOKEN}"
 echo "SONAR_TOKEN: ${SONAR_TOKEN}"
+echo ""
+cat /usr/local/Cellar/sonar-scanner/2.8/libexec/conf/sonar-scanner.properties
 
 if [ "${CI_PULL_REQUEST}" = "" ]; then
     # => This will run a full analysis of the project and push results to the SonarQube server.
