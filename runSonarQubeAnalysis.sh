@@ -13,7 +13,7 @@ echo "CI_PULL_REQUEST: ${CI_PULL_REQUEST}"
 echo "GITHUB_TOKEN: ${GITHUB_TOKEN}"
 echo "SONAR_TOKEN: ${SONAR_TOKEN}"
 
-if [ "${CIRCLE_BRANCH}" = "master" ] && [ "${CI_PULL_REQUEST}" = "false" ]; then
+if [ "${CI_PULL_REQUEST}" = "" ]; then
     # => This will run a full analysis of the project and push results to the SonarQube server.
     #
     # Analysis is done only on master so that build of branches don't push analyses to the same project and therefore "pollute" the results
@@ -23,7 +23,7 @@ if [ "${CIRCLE_BRANCH}" = "master" ] && [ "${CI_PULL_REQUEST}" = "false" ]; then
         -Dsonar.github.oauth=$GITHUB_TOKEN \
         -Dsonar.projectVersion=$CIRCLE_BRANCH
     
-elif [ "$CI_PULL_REQUEST" != "false" ] && [ -n "${GITHUB_TOKEN}" ]; then
+elif [ "$CI_PULL_REQUEST" != "" ] && [ -n "${GITHUB_TOKEN}" ]; then
     # => This will analyse the PR and display found issues as comments in the PR, but it won't push results to the SonarQube server
     #
     # For security reasons environment variables are not available on the pull requests
