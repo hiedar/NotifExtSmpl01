@@ -12,7 +12,8 @@ echo "CIRCLE_BRANCH: ${CIRCLE_BRANCH}"
 echo "CI_PULL_REQUEST: ${CI_PULL_REQUEST}"
 echo "GITHUB_TOKEN: ${GITHUB_TOKEN}"
 echo "SONAR_TOKEN: ${SONAR_TOKEN}"
-echo "${CI_PULL_REQUEST##*/}"
+PULL_REQUEST_NO="${CI_PULL_REQUEST##*/}"
+echo "${PULL_REQUEST_NO}"
 echo ""
 cat /usr/local/Cellar/sonar-scanner/2.8/libexec/conf/sonar-scanner.properties
 
@@ -38,6 +39,6 @@ elif [ "$CI_PULL_REQUEST" != "" ] && [ -n "${GITHUB_TOKEN}" ]; then
         -Dsonar.login=$SONAR_TOKEN \
         -Dsonar.analysis.mode=preview \
         -Dsonar.github.oauth=$GITHUB_TOKEN \
-        -Dsonar.github.pullRequest="$CI_PULL_REQUEST##*/"
+        -Dsonar.github.pullRequest=$PULL_REQUEST_NO
 fi
 # When neither on master branch nor on a non-external pull request => nothing to do
