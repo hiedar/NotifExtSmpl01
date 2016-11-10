@@ -8,9 +8,10 @@ set -e
 
 # And run the analysis
 # It assumes that the project uses Maven and has a POM at the root of the repo
-echo "${CIRCLE_BRANCH}"
-echo "${CI_PULL_REQUEST}"
-echo "${GITHUB_TOKEN}"
+echo "CIRCLE_BRANCH: ${CIRCLE_BRANCH}"
+echo "CI_PULL_REQUEST: ${CI_PULL_REQUEST}"
+echo "GITHUB_TOKEN: ${GITHUB_TOKEN}"
+echo "SONAR_TOKEN: ${SONAR_TOKEN}"
 
 if [ "${CIRCLE_BRANCH}" = "master" ] && [ "${CI_PULL_REQUEST}" = "false" ]; then
     # => This will run a full analysis of the project and push results to the SonarQube server.
