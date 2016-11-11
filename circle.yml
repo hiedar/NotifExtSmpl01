@@ -12,4 +12,5 @@ dependencies:
     
 test:
   override:
+    - pod install
     - set -o pipefail && xcodebuild -project 'NotifExtSmpl01.xcodeproj' -scheme 'NotifExtSmpl01' clean build test -sdk iphonesimulator -destination 'platform=iOS Simulator,id=2D96E690-BFB5-44D5-8B22-31D9C57EDADF,OS=latest' CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY= PROVISIONING_PROFILE= | tee $CIRCLE_ARTIFACTS/xcode_raw.log | xcpretty --color --report junit --output $CIRCLE_TEST_REPORTS/xcode/results.xml
