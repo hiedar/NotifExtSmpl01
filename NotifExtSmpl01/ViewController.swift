@@ -7,36 +7,23 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var imageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let foo: String?
-        foo = nil
+        let url = URL(string: "https://raw.githubusercontent.com/onevcat/Kingfisher/master/images/kingfisher-1.jpg")!
         
-        var b: String? = "nobita"
-        b = nil; b="doraemon"
-        
-        var param = 1
-        
-        if param == 1 {
-            param += 1
-            
-        } else if param == 2 {
-            param += 1
-            
-        } else if param == 1 {            // Noncompliant
-            param += 1
-        }
+        self.imageView.kf.setImage(with: url)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 
