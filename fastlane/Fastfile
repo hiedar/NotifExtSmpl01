@@ -1,0 +1,37 @@
+default_platform :ios
+
+platform :ios do
+  before_all do
+  end
+
+  lane :read_wild_card do
+    match(
+        type: "development",
+        app_identifier: "*",
+        readonly: true
+      )
+  end
+
+  desc "Submit a new Beta Build to DeployGate"
+  lane :dg do
+    match(type: "development", readonly: true,app_identifier: "jp.co.lib-gate.NotifExtSmpl01")
+    gym(
+      workspace: 'NotifExtSmpl01.xcworkspace',
+      clean: true,
+      scheme: "NotifExtSmpl01",
+      configuration: "Debug",
+      use_legacy_build_api: true
+    )
+    deploygate(
+        api_token: ENV['DEPLOYGATE_API_KEY'],
+        user: ENV['DEPLOYGATE_USER'],
+        message: "Build #{lane_context[SharedValues::BUILD_NUMBER]}",
+        )
+  end
+  
+  after_all do |lane|
+  end
+
+  error do |lane, exception|
+  end
+end
