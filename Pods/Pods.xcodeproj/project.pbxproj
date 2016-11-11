@@ -1,0 +1,771 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		179523942E7D1E3EB210EF05E2C7AE79 /* Kingfisher.h in Headers */ = {isa = PBXBuildFile; fileRef = 66D0BD2D1B01B44F4ADD77E8C63460FD /* Kingfisher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0D743774654C9204D245EE05965AF6 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5262E4E77E9D9051F1D3CD476D3B4295 /* Resource.swift */; };
+		2F5A5C7AC98FD014FE483F8839C409EE /* CacheSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2B12433E7ECAD9C865277AB1EA2D15 /* CacheSerializer.swift */; };
+		3BB2F41D6AC3DE89D4CEDD26BCA8AA18 /* AnimatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097CC113F9D2338D59C9FF083045A2F6 /* AnimatedImageView.swift */; };
+		3E1D52318F691D53142EF232CA98042F /* ImageTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A9273B662E2B3359BDBF13AB1DB7D0 /* ImageTransition.swift */; };
+		40554415DA43CEDDC57474D689EAD99F /* UIButton+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A043E3D34F3D11DBA2EA6FC59C885966 /* UIButton+Kingfisher.swift */; };
+		43D6C3F5F8E90771DEBF166207E60666 /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652EF1779CED8AA750DC183FFAC06018 /* ImageProcessor.swift */; };
+		542ECCCFC91F7A7119FEF23F870A4230 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADD0ED4EE89E98E15F5EB232795101C /* Box.swift */; };
+		56A3E82290A6858388CB981151E091A5 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184999116F4AECAA4F17BF17B5ACD0CC /* Filter.swift */; };
+		576F6097B671FB2BF7759DD54E17D28C /* ThreadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58FE668206B91CA30595AF92B99EA46 /* ThreadHelper.swift */; };
+		5AC2C27E7DD3CEF2AF003DC2A9572603 /* Pods-NotificationService-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E1CC894187E2890CE68AF15C550884B /* Pods-NotificationService-dummy.m */; };
+		65395B7227C36840EBEFBF13C5DA0DC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C074C11AE6A5B57D6F593C07D4511E4 /* Foundation.framework */; };
+		66140D9E07108FD80E9DEA01FB2FE645 /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BAD3B70027F84827A50FA20EEC0371 /* Indicator.swift */; };
+		689E68F4D2F7DD23BD8D0ACD75CED0A0 /* Pods-NotifExtSmpl01-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A75107420AAD1FD53B67A33D19E1B146 /* Pods-NotifExtSmpl01-dummy.m */; };
+		775B87BDA41F8A581D34B7B5DF51AC22 /* Kingfisher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 12BAB0C7F9C9A4E1CD135E1A6CD61DE8 /* Kingfisher-dummy.m */; };
+		7CCF8A451663F39CC166D841C03C4FB2 /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8F955A0413955961FDDAE529DA397E /* String+MD5.swift */; };
+		8211B5452C89840FBFC7647359EE75B0 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E8E273A742B1F3C14EE808D73B947E /* ImageDownloader.swift */; };
+		8503755E5399FD0B250681092676B79F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C074C11AE6A5B57D6F593C07D4511E4 /* Foundation.framework */; };
+		92136C6584624998D5005F46C70A628B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA5794656CD6EAD5432F6E93991FC63 /* CFNetwork.framework */; };
+		957C0C65C9B31B64CADD6022BC3DDD58 /* RequrstModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9738802D22EE9FBA6D249CEF4DCB5C25 /* RequrstModifier.swift */; };
+		9C99E45B90BD95712D9878994BFC8B88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C074C11AE6A5B57D6F593C07D4511E4 /* Foundation.framework */; };
+		A8F35D1EBAEF99D38F02A0B8CA5D8FBE /* Kingfisher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 39E4C80088BB0CF82A6E7E58732FD8C9 /* Kingfisher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ADCF0A92A8F319720984BDE8CF142A06 /* Pods-NotifExtSmpl01-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E896DC295D1467EF3037013652CAD851 /* Pods-NotifExtSmpl01-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDB9501036883239F767427151681CBF /* ImageView+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B990905CAF025C1F8D2FD62D93105B23 /* ImageView+Kingfisher.swift */; };
+		C6107A9925494B94DE7C60C4184DCC7F /* Pods-NotificationService-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FC316E6D2A802AAAC4068B06CB658455 /* Pods-NotificationService-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6B4E4BE9E653E719CF1183564335D24 /* KingfisherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E6616F81BB594DF82F597720513658 /* KingfisherManager.swift */; };
+		D69B13406807EEA4DC1E8F19D02DF509 /* KingfisherOptionsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B5E213DCEE6FF2583B22915E15E7EF /* KingfisherOptionsInfo.swift */; };
+		DBE99D60F85AC315A6A72181E3B3FA99 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF97DC70BBF9DF1F9B56BC4DF2282160 /* Image.swift */; };
+		E68C478E9E471F685966CFB71A32A956 /* ImagePrefetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84863B99AA616A8C8CF2C89DA2A0BE7B /* ImagePrefetcher.swift */; };
+		EB801B4773127C25CB39D2485031F816 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164BFF9C934C0EA2BC0B8212A2467DFD /* ImageCache.swift */; };
+		F193C5394E96BB3155CF96706D838034 /* Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20521D775227ED83B4EE40D0EB6CC67 /* Kingfisher.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D17DAB49E8D65788B9A2D4A88E23BCF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4944FEC314D1A66588651D006273ADE;
+			remoteInfo = Kingfisher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		057D493804B8D9EB288CE89F84755DD9 /* Pods-NotifExtSmpl01.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NotifExtSmpl01.release.xcconfig"; sourceTree = "<group>"; };
+		097CC113F9D2338D59C9FF083045A2F6 /* AnimatedImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedImageView.swift; path = Sources/AnimatedImageView.swift; sourceTree = "<group>"; };
+		12BAB0C7F9C9A4E1CD135E1A6CD61DE8 /* Kingfisher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Kingfisher-dummy.m"; sourceTree = "<group>"; };
+		164BFF9C934C0EA2BC0B8212A2467DFD /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Sources/ImageCache.swift; sourceTree = "<group>"; };
+		184999116F4AECAA4F17BF17B5ACD0CC /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Sources/Filter.swift; sourceTree = "<group>"; };
+		26E3BEB4DC29E66E2FB35DA1ED022960 /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Kingfisher.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C572157673D9162F021E4B9B9D0803B /* Pods-NotifExtSmpl01-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NotifExtSmpl01-resources.sh"; sourceTree = "<group>"; };
+		33A9273B662E2B3359BDBF13AB1DB7D0 /* ImageTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageTransition.swift; path = Sources/ImageTransition.swift; sourceTree = "<group>"; };
+		39E0BA5FC006CDA0B406BA2929C4B1A5 /* Pods-NotificationService-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NotificationService-resources.sh"; sourceTree = "<group>"; };
+		39E4C80088BB0CF82A6E7E58732FD8C9 /* Kingfisher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-umbrella.h"; sourceTree = "<group>"; };
+		4B0ACD17C67CCD8B77C35B762185F9E9 /* Pods-NotifExtSmpl01.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NotifExtSmpl01.debug.xcconfig"; sourceTree = "<group>"; };
+		5262E4E77E9D9051F1D3CD476D3B4295 /* Resource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resource.swift; path = Sources/Resource.swift; sourceTree = "<group>"; };
+		56BAD3B70027F84827A50FA20EEC0371 /* Indicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Indicator.swift; path = Sources/Indicator.swift; sourceTree = "<group>"; };
+		5C074C11AE6A5B57D6F593C07D4511E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5EEF9AA4AC9DA5320B343EBF17E67F43 /* Pods-NotifExtSmpl01-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NotifExtSmpl01-acknowledgements.plist"; sourceTree = "<group>"; };
+		652EF1779CED8AA750DC183FFAC06018 /* ImageProcessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageProcessor.swift; path = Sources/ImageProcessor.swift; sourceTree = "<group>"; };
+		65E8E273A742B1F3C14EE808D73B947E /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Sources/ImageDownloader.swift; sourceTree = "<group>"; };
+		66D0BD2D1B01B44F4ADD77E8C63460FD /* Kingfisher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Kingfisher.h; path = Sources/Kingfisher.h; sourceTree = "<group>"; };
+		74331440066DF37C19709544BC238190 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		764487F9A8C8CC153CCF8E7515372053 /* Pods-NotifExtSmpl01.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NotifExtSmpl01.modulemap"; sourceTree = "<group>"; };
+		84863B99AA616A8C8CF2C89DA2A0BE7B /* ImagePrefetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagePrefetcher.swift; path = Sources/ImagePrefetcher.swift; sourceTree = "<group>"; };
+		8F48B6F6674D75F71B4F0A34CB086ACC /* Pods-NotifExtSmpl01-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NotifExtSmpl01-frameworks.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95CC2BA62292667370B349914C63A702 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9738802D22EE9FBA6D249CEF4DCB5C25 /* RequrstModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequrstModifier.swift; path = Sources/RequrstModifier.swift; sourceTree = "<group>"; };
+		9E1CC894187E2890CE68AF15C550884B /* Pods-NotificationService-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NotificationService-dummy.m"; sourceTree = "<group>"; };
+		A043E3D34F3D11DBA2EA6FC59C885966 /* UIButton+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Kingfisher.swift"; path = "Sources/UIButton+Kingfisher.swift"; sourceTree = "<group>"; };
+		A0E6616F81BB594DF82F597720513658 /* KingfisherManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherManager.swift; path = Sources/KingfisherManager.swift; sourceTree = "<group>"; };
+		A75107420AAD1FD53B67A33D19E1B146 /* Pods-NotifExtSmpl01-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NotifExtSmpl01-dummy.m"; sourceTree = "<group>"; };
+		AB08136C93BF778AA310D7CAF2A5D5E1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACBADF7B15D70EF6717B6F217F972932 /* Pods-NotificationService-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NotificationService-acknowledgements.plist"; sourceTree = "<group>"; };
+		AF97DC70BBF9DF1F9B56BC4DF2282160 /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Sources/Image.swift; sourceTree = "<group>"; };
+		B0B5E213DCEE6FF2583B22915E15E7EF /* KingfisherOptionsInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherOptionsInfo.swift; path = Sources/KingfisherOptionsInfo.swift; sourceTree = "<group>"; };
+		B20521D775227ED83B4EE40D0EB6CC67 /* Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Kingfisher.swift; path = Sources/Kingfisher.swift; sourceTree = "<group>"; };
+		B990905CAF025C1F8D2FD62D93105B23 /* ImageView+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ImageView+Kingfisher.swift"; path = "Sources/ImageView+Kingfisher.swift"; sourceTree = "<group>"; };
+		BB2B12433E7ECAD9C865277AB1EA2D15 /* CacheSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CacheSerializer.swift; path = Sources/CacheSerializer.swift; sourceTree = "<group>"; };
+		BC95EC33B9DE55EDF4443886EF6291D4 /* Pods-NotificationService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NotificationService.release.xcconfig"; sourceTree = "<group>"; };
+		CA8F955A0413955961FDDAE529DA397E /* String+MD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+MD5.swift"; path = "Sources/String+MD5.swift"; sourceTree = "<group>"; };
+		D30F7030947C4F2D1AA70809F9BBA47E /* Pods-NotificationService.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NotificationService.modulemap"; sourceTree = "<group>"; };
+		D58FE668206B91CA30595AF92B99EA46 /* ThreadHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThreadHelper.swift; path = Sources/ThreadHelper.swift; sourceTree = "<group>"; };
+		DAE8785584EFA00A18E69D5D49552CC9 /* Kingfisher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kingfisher.xcconfig; sourceTree = "<group>"; };
+		DBA5794656CD6EAD5432F6E93991FC63 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		E685747EAACD97A35CF5E5A167389E3C /* Pods-NotificationService-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NotificationService-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E896DC295D1467EF3037013652CAD851 /* Pods-NotifExtSmpl01-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NotifExtSmpl01-umbrella.h"; sourceTree = "<group>"; };
+		EE70223AFF7CADEC31CD028EEDA973B7 /* Kingfisher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-prefix.pch"; sourceTree = "<group>"; };
+		F023EE20CCC66A01E6CC9CE5CAE47729 /* Pods_NotificationService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NotificationService.framework; path = "Pods-NotificationService.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0754D45B5BF024917B3EBEE55B34FF4 /* Pods_NotifExtSmpl01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NotifExtSmpl01.framework; path = "Pods-NotifExtSmpl01.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6C60D6DEF61062054C1848E691BA5DF /* Kingfisher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Kingfisher.modulemap; sourceTree = "<group>"; };
+		FA3ADF3A3A4EBAAE0FDFBF69D26D48C9 /* Pods-NotificationService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NotificationService.debug.xcconfig"; sourceTree = "<group>"; };
+		FADD0ED4EE89E98E15F5EB232795101C /* Box.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Box.swift; path = Sources/Box.swift; sourceTree = "<group>"; };
+		FB192EC4CD4DBE22D1B8509EBE0A23C0 /* Pods-NotifExtSmpl01-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NotifExtSmpl01-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FC316E6D2A802AAAC4068B06CB658455 /* Pods-NotificationService-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NotificationService-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C4F6712409E97265AFFBFFC4364841A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65395B7227C36840EBEFBF13C5DA0DC3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FD8C9649D9C42B63D91EF3CB11FFF79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8503755E5399FD0B250681092676B79F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED03E5917B811BACFE75189AE0C2A469 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92136C6584624998D5005F46C70A628B /* CFNetwork.framework in Frameworks */,
+				9C99E45B90BD95712D9878994BFC8B88 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07B963F066CF1C907024B787F3D5186F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				DBA5794656CD6EAD5432F6E93991FC63 /* CFNetwork.framework */,
+				5C074C11AE6A5B57D6F593C07D4511E4 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07B963F066CF1C907024B787F3D5186F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B3DF942FF1B9C64762CA9237897DABF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB08136C93BF778AA310D7CAF2A5D5E1 /* Info.plist */,
+				F6C60D6DEF61062054C1848E691BA5DF /* Kingfisher.modulemap */,
+				DAE8785584EFA00A18E69D5D49552CC9 /* Kingfisher.xcconfig */,
+				12BAB0C7F9C9A4E1CD135E1A6CD61DE8 /* Kingfisher-dummy.m */,
+				EE70223AFF7CADEC31CD028EEDA973B7 /* Kingfisher-prefix.pch */,
+				39E4C80088BB0CF82A6E7E58732FD8C9 /* Kingfisher-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Kingfisher";
+			sourceTree = "<group>";
+		};
+		6D6A3E96995405C682083EAC9705D118 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				84F7AED7F2DD9034E3739542F36C3C81 /* Kingfisher */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				6D6A3E96995405C682083EAC9705D118 /* Pods */,
+				B5D0375B24EF66D02DA49FE6CF84CDE0 /* Products */,
+				F79396C4AFBFB5C5BF954F9FC76A91BC /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		84F7AED7F2DD9034E3739542F36C3C81 /* Kingfisher */ = {
+			isa = PBXGroup;
+			children = (
+				097CC113F9D2338D59C9FF083045A2F6 /* AnimatedImageView.swift */,
+				FADD0ED4EE89E98E15F5EB232795101C /* Box.swift */,
+				BB2B12433E7ECAD9C865277AB1EA2D15 /* CacheSerializer.swift */,
+				184999116F4AECAA4F17BF17B5ACD0CC /* Filter.swift */,
+				AF97DC70BBF9DF1F9B56BC4DF2282160 /* Image.swift */,
+				164BFF9C934C0EA2BC0B8212A2467DFD /* ImageCache.swift */,
+				65E8E273A742B1F3C14EE808D73B947E /* ImageDownloader.swift */,
+				84863B99AA616A8C8CF2C89DA2A0BE7B /* ImagePrefetcher.swift */,
+				652EF1779CED8AA750DC183FFAC06018 /* ImageProcessor.swift */,
+				33A9273B662E2B3359BDBF13AB1DB7D0 /* ImageTransition.swift */,
+				B990905CAF025C1F8D2FD62D93105B23 /* ImageView+Kingfisher.swift */,
+				56BAD3B70027F84827A50FA20EEC0371 /* Indicator.swift */,
+				66D0BD2D1B01B44F4ADD77E8C63460FD /* Kingfisher.h */,
+				B20521D775227ED83B4EE40D0EB6CC67 /* Kingfisher.swift */,
+				A0E6616F81BB594DF82F597720513658 /* KingfisherManager.swift */,
+				B0B5E213DCEE6FF2583B22915E15E7EF /* KingfisherOptionsInfo.swift */,
+				9738802D22EE9FBA6D249CEF4DCB5C25 /* RequrstModifier.swift */,
+				5262E4E77E9D9051F1D3CD476D3B4295 /* Resource.swift */,
+				CA8F955A0413955961FDDAE529DA397E /* String+MD5.swift */,
+				D58FE668206B91CA30595AF92B99EA46 /* ThreadHelper.swift */,
+				A043E3D34F3D11DBA2EA6FC59C885966 /* UIButton+Kingfisher.swift */,
+				6B3DF942FF1B9C64762CA9237897DABF /* Support Files */,
+			);
+			name = Kingfisher;
+			path = Kingfisher;
+			sourceTree = "<group>";
+		};
+		B5D0375B24EF66D02DA49FE6CF84CDE0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26E3BEB4DC29E66E2FB35DA1ED022960 /* Kingfisher.framework */,
+				F0754D45B5BF024917B3EBEE55B34FF4 /* Pods_NotifExtSmpl01.framework */,
+				F023EE20CCC66A01E6CC9CE5CAE47729 /* Pods_NotificationService.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F79396C4AFBFB5C5BF954F9FC76A91BC /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD4E7AD44904C8CE0C94CEA6080BC02E /* Pods-NotifExtSmpl01 */,
+				FB73A108CEA51A39EE784BB9E07F544A /* Pods-NotificationService */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		FB73A108CEA51A39EE784BB9E07F544A /* Pods-NotificationService */ = {
+			isa = PBXGroup;
+			children = (
+				95CC2BA62292667370B349914C63A702 /* Info.plist */,
+				D30F7030947C4F2D1AA70809F9BBA47E /* Pods-NotificationService.modulemap */,
+				E685747EAACD97A35CF5E5A167389E3C /* Pods-NotificationService-acknowledgements.markdown */,
+				ACBADF7B15D70EF6717B6F217F972932 /* Pods-NotificationService-acknowledgements.plist */,
+				9E1CC894187E2890CE68AF15C550884B /* Pods-NotificationService-dummy.m */,
+				39E0BA5FC006CDA0B406BA2929C4B1A5 /* Pods-NotificationService-resources.sh */,
+				FC316E6D2A802AAAC4068B06CB658455 /* Pods-NotificationService-umbrella.h */,
+				FA3ADF3A3A4EBAAE0FDFBF69D26D48C9 /* Pods-NotificationService.debug.xcconfig */,
+				BC95EC33B9DE55EDF4443886EF6291D4 /* Pods-NotificationService.release.xcconfig */,
+			);
+			name = "Pods-NotificationService";
+			path = "Target Support Files/Pods-NotificationService";
+			sourceTree = "<group>";
+		};
+		FD4E7AD44904C8CE0C94CEA6080BC02E /* Pods-NotifExtSmpl01 */ = {
+			isa = PBXGroup;
+			children = (
+				74331440066DF37C19709544BC238190 /* Info.plist */,
+				764487F9A8C8CC153CCF8E7515372053 /* Pods-NotifExtSmpl01.modulemap */,
+				FB192EC4CD4DBE22D1B8509EBE0A23C0 /* Pods-NotifExtSmpl01-acknowledgements.markdown */,
+				5EEF9AA4AC9DA5320B343EBF17E67F43 /* Pods-NotifExtSmpl01-acknowledgements.plist */,
+				A75107420AAD1FD53B67A33D19E1B146 /* Pods-NotifExtSmpl01-dummy.m */,
+				8F48B6F6674D75F71B4F0A34CB086ACC /* Pods-NotifExtSmpl01-frameworks.sh */,
+				2C572157673D9162F021E4B9B9D0803B /* Pods-NotifExtSmpl01-resources.sh */,
+				E896DC295D1467EF3037013652CAD851 /* Pods-NotifExtSmpl01-umbrella.h */,
+				4B0ACD17C67CCD8B77C35B762185F9E9 /* Pods-NotifExtSmpl01.debug.xcconfig */,
+				057D493804B8D9EB288CE89F84755DD9 /* Pods-NotifExtSmpl01.release.xcconfig */,
+			);
+			name = "Pods-NotifExtSmpl01";
+			path = "Target Support Files/Pods-NotifExtSmpl01";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0F94B6BFE5A6242FBBB0BE3D27F7CEE9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8F35D1EBAEF99D38F02A0B8CA5D8FBE /* Kingfisher-umbrella.h in Headers */,
+				179523942E7D1E3EB210EF05E2C7AE79 /* Kingfisher.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53273ED0B37261E9557B5A1BF842415D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADCF0A92A8F319720984BDE8CF142A06 /* Pods-NotifExtSmpl01-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		812F0F0C72C5B1A9850D6E3CBAF67FC4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6107A9925494B94DE7C60C4184DCC7F /* Pods-NotificationService-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A01FC77D1AFCBD98E2AAF3A3A61699DE /* Pods-NotificationService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07BD886319C73E223CCA5C7E2C8E0EAB /* Build configuration list for PBXNativeTarget "Pods-NotificationService" */;
+			buildPhases = (
+				4E4651BE597B4539B700ABF1541B2ED8 /* Sources */,
+				0C4F6712409E97265AFFBFFC4364841A /* Frameworks */,
+				812F0F0C72C5B1A9850D6E3CBAF67FC4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-NotificationService";
+			productName = "Pods-NotificationService";
+			productReference = F023EE20CCC66A01E6CC9CE5CAE47729 /* Pods_NotificationService.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A276CA35EC8D7376454FD03E59F45AE2 /* Pods-NotifExtSmpl01 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5008680656E0E311F3CDB9A5257FF55 /* Build configuration list for PBXNativeTarget "Pods-NotifExtSmpl01" */;
+			buildPhases = (
+				37AC6EA5CF35BC7457117C0A2ECB054E /* Sources */,
+				0FD8C9649D9C42B63D91EF3CB11FFF79 /* Frameworks */,
+				53273ED0B37261E9557B5A1BF842415D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D155EEEDBF18B43716A52DDF48E1973B /* PBXTargetDependency */,
+			);
+			name = "Pods-NotifExtSmpl01";
+			productName = "Pods-NotifExtSmpl01";
+			productReference = F0754D45B5BF024917B3EBEE55B34FF4 /* Pods_NotifExtSmpl01.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C4944FEC314D1A66588651D006273ADE /* Kingfisher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76E7EFBCEA1340954A03AA68051C2306 /* Build configuration list for PBXNativeTarget "Kingfisher" */;
+			buildPhases = (
+				3373BA776C9A8B1A8637556C47E5AF83 /* Sources */,
+				ED03E5917B811BACFE75189AE0C2A469 /* Frameworks */,
+				0F94B6BFE5A6242FBBB0BE3D27F7CEE9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kingfisher;
+			productName = Kingfisher;
+			productReference = 26E3BEB4DC29E66E2FB35DA1ED022960 /* Kingfisher.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = B5D0375B24EF66D02DA49FE6CF84CDE0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4944FEC314D1A66588651D006273ADE /* Kingfisher */,
+				A276CA35EC8D7376454FD03E59F45AE2 /* Pods-NotifExtSmpl01 */,
+				A01FC77D1AFCBD98E2AAF3A3A61699DE /* Pods-NotificationService */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3373BA776C9A8B1A8637556C47E5AF83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BB2F41D6AC3DE89D4CEDD26BCA8AA18 /* AnimatedImageView.swift in Sources */,
+				542ECCCFC91F7A7119FEF23F870A4230 /* Box.swift in Sources */,
+				2F5A5C7AC98FD014FE483F8839C409EE /* CacheSerializer.swift in Sources */,
+				56A3E82290A6858388CB981151E091A5 /* Filter.swift in Sources */,
+				DBE99D60F85AC315A6A72181E3B3FA99 /* Image.swift in Sources */,
+				EB801B4773127C25CB39D2485031F816 /* ImageCache.swift in Sources */,
+				8211B5452C89840FBFC7647359EE75B0 /* ImageDownloader.swift in Sources */,
+				E68C478E9E471F685966CFB71A32A956 /* ImagePrefetcher.swift in Sources */,
+				43D6C3F5F8E90771DEBF166207E60666 /* ImageProcessor.swift in Sources */,
+				3E1D52318F691D53142EF232CA98042F /* ImageTransition.swift in Sources */,
+				BDB9501036883239F767427151681CBF /* ImageView+Kingfisher.swift in Sources */,
+				66140D9E07108FD80E9DEA01FB2FE645 /* Indicator.swift in Sources */,
+				775B87BDA41F8A581D34B7B5DF51AC22 /* Kingfisher-dummy.m in Sources */,
+				F193C5394E96BB3155CF96706D838034 /* Kingfisher.swift in Sources */,
+				C6B4E4BE9E653E719CF1183564335D24 /* KingfisherManager.swift in Sources */,
+				D69B13406807EEA4DC1E8F19D02DF509 /* KingfisherOptionsInfo.swift in Sources */,
+				957C0C65C9B31B64CADD6022BC3DDD58 /* RequrstModifier.swift in Sources */,
+				1A0D743774654C9204D245EE05965AF6 /* Resource.swift in Sources */,
+				7CCF8A451663F39CC166D841C03C4FB2 /* String+MD5.swift in Sources */,
+				576F6097B671FB2BF7759DD54E17D28C /* ThreadHelper.swift in Sources */,
+				40554415DA43CEDDC57474D689EAD99F /* UIButton+Kingfisher.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37AC6EA5CF35BC7457117C0A2ECB054E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				689E68F4D2F7DD23BD8D0ACD75CED0A0 /* Pods-NotifExtSmpl01-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E4651BE597B4539B700ABF1541B2ED8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AC2C27E7DD3CEF2AF003DC2A9572603 /* Pods-NotificationService-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D155EEEDBF18B43716A52DDF48E1973B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Kingfisher;
+			target = C4944FEC314D1A66588651D006273ADE /* Kingfisher */;
+			targetProxy = D17DAB49E8D65788B9A2D4A88E23BCF1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		12914D756594D15C6F2CA12FE5F89F1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		13BD2D077356C43E3B2B8847469546BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA3ADF3A3A4EBAAE0FDFBF69D26D48C9 /* Pods-NotificationService.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NotificationService/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NotificationService/Pods-NotificationService.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NotificationService;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		380C30050278E488BE23DB926933212E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAE8785584EFA00A18E69D5D49552CC9 /* Kingfisher.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Kingfisher/Kingfisher-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Kingfisher/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Kingfisher/Kingfisher.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Kingfisher;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4D039FD70D97B6DC6D812F7F264DA215 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B0ACD17C67CCD8B77C35B762185F9E9 /* Pods-NotifExtSmpl01.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NotifExtSmpl01/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NotifExtSmpl01/Pods-NotifExtSmpl01.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NotifExtSmpl01;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6E53245BBAAAB71AD4E0EE52CA99FD28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAE8785584EFA00A18E69D5D49552CC9 /* Kingfisher.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Kingfisher/Kingfisher-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Kingfisher/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Kingfisher/Kingfisher.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Kingfisher;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C02908EF6614480AA538DB66C12725AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 057D493804B8D9EB288CE89F84755DD9 /* Pods-NotifExtSmpl01.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NotifExtSmpl01/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NotifExtSmpl01/Pods-NotifExtSmpl01.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NotifExtSmpl01;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D496A0305D0CF6CBC9BDB3B21DFB9CCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC95EC33B9DE55EDF4443886EF6291D4 /* Pods-NotificationService.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NotificationService/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NotificationService/Pods-NotificationService.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NotificationService;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E72E7977875C2D251FC62736BBDDC389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07BD886319C73E223CCA5C7E2C8E0EAB /* Build configuration list for PBXNativeTarget "Pods-NotificationService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13BD2D077356C43E3B2B8847469546BF /* Debug */,
+				D496A0305D0CF6CBC9BDB3B21DFB9CCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12914D756594D15C6F2CA12FE5F89F1B /* Debug */,
+				E72E7977875C2D251FC62736BBDDC389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76E7EFBCEA1340954A03AA68051C2306 /* Build configuration list for PBXNativeTarget "Kingfisher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E53245BBAAAB71AD4E0EE52CA99FD28 /* Debug */,
+				380C30050278E488BE23DB926933212E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5008680656E0E311F3CDB9A5257FF55 /* Build configuration list for PBXNativeTarget "Pods-NotifExtSmpl01" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D039FD70D97B6DC6D812F7F264DA215 /* Debug */,
+				C02908EF6614480AA538DB66C12725AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
