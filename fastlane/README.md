@@ -6,9 +6,19 @@ sudo gem install fastlane
 ```
 # Available Actions
 ## iOS
+### ios certs
+```
+fastlane ios certs
+```
+
 ### ios read_wild_card
 ```
 fastlane ios read_wild_card
+```
+
+### ios development
+```
+fastlane ios development
 ```
 
 ### ios dg

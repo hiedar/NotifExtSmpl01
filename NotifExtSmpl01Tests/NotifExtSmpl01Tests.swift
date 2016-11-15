@@ -33,7 +33,7 @@ class NotifExtSmpl01Tests: XCTestCase {
         var isExist = false
         let stations = StationDataService.getHibiyaStations()
         for station in stations {
-            if station == "北千住駅" {
+            if station == "横浜駅" {
                 isExist = true
             }
         }

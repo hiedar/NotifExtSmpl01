@@ -1,4 +1,4 @@
-git_url "git@bitbucket.org:citest_cocoarium/provisioning_profile_test.git"
+git_url "https://hiedar02@bitbucket.org/citest_cocoarium/provisioning_profile_test.git"
 
 type "development" # The default type, can be: appstore, adhoc or development
 

@@ -4,6 +4,10 @@ platform :ios do
   before_all do
   end
 
+  lane :certs do
+    match(type: "development", readonly: true,app_identifier: "jp.co.lib-gate.NotifExtSmpl01")
+  end
+
   lane :read_wild_card do
     match(
         type: "development",
@@ -11,6 +15,20 @@ platform :ios do
         readonly: true
       )
   end
+
+  lane :development do
+    match(type: "development", readonly: true,app_identifier: "jp.co.lib-gate.NotifExtSmpl01")
+    gym(
+      workspace: 'NotifExtSmpl01.xcworkspace',
+      scheme: "NotifExtSmpl01",
+      clean: true,
+#      output_directory: "./build",
+#      output_name: "debug.ipa",
+      configuration: "Debug",
+      export_method: "development" # See xcodebuild -help "medhod"
+    )
+  end
+
 
   desc "Submit a new Beta Build to DeployGate"
   lane :dg do

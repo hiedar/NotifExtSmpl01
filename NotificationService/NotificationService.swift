@@ -23,7 +23,6 @@ class NotificationService: UNNotificationServiceExtension {
         
         if flg == 1 {
             
-            
             self.contentHandler = contentHandler
             bestAttemptContent = (request.content.mutableCopy() as? UNMutableNotificationContent)
             

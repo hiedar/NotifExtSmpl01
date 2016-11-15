@@ -8,10 +8,12 @@
 
 import UIKit
 import Kingfisher
+import UserNotifications
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var textView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,10 +22,65 @@ class ViewController: UIViewController {
         
         self.imageView.kf.setImage(with: url)
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(self.setTokenText(_:)),
+                                               name: .tokenNotificationKey,
+                                               object: nil)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        NotificationCenter.default.removeObserver(self,
+                                                  name: .tokenNotificationKey,
+                                                  object: nil)
+    }
+    
+    @IBAction func lazyLocalPush(_ sender: Any) {
+        if #available(iOS 10.0, *) {
+            let content = UNMutableNotificationContent()
+            content.title = "Title"
+            content.subtitle = "Subtitle"
+            content.body = "Body"
+            content.sound = UNNotificationSound.default()
+            content.badge = 10
+            
+            if let url = Bundle.main.url(forResource: "sample", withExtension: "m4v") {
+                let attachment = try? UNNotificationAttachment(identifier: "attachment", url: url, options: nil)
+                if let attachment = attachment {
+                    content.attachments = [attachment]
+                }
+            }
+            
+            // カスタムアクション
+            content.categoryIdentifier = "todoCategoryIdentifier"
+            
+            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+            let request = UNNotificationRequest(identifier: "FiveSecond",
+                                                content: content,
+                                                trigger: trigger)
+            
+            UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+        }
+    }
+    
+    @IBAction func clearBadge(_ sender: Any) {
+        UIApplication.shared.applicationIconBadgeNumber = 0
+    }
+    
+    @objc func setTokenText(_ notification: Notification) {
+        guard let tokenText = notification.object as? String else { return }
+        
+        self.textView.text = tokenText
     }
 }
 

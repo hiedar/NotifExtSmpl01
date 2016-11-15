@@ -1,3 +1,8 @@
+general:
+  branches:
+    only:
+      - master
+
 machine:
   xcode:
     version: 8.0
