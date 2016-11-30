@@ -34,8 +34,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             let replyAction = UNTextInputNotificationAction(identifier: NotificationAction.reply.identifier,
                                                             title: NotificationAction.reply.title,
                                                             options:[],
-                                                            textInputButtonTitle: "Send",
-                                                            textInputPlaceholder: "Input reply text")
+                                                            textInputButtonTitle: "send",
+                                                            textInputPlaceholder: "input reply text")
             let closeAction = UNNotificationAction(identifier: NotificationAction.close.identifier,
                                                    title: NotificationAction.close.title,
                                                    options:[.destructive])
