@@ -653,7 +653,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 20E87FB0C8A21EE761D6C591 /* Pods-NotifExtSmpl01.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = NotifExtSmpl01/NotifExtSmpl01.entitlements;
 				DEVELOPMENT_TEAM = 8Q9JB68VQH;
@@ -672,7 +672,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BB765C28811AFBB89D3CA5EF /* Pods-NotifExtSmpl01.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = NotifExtSmpl01/NotifExtSmpl01.entitlements;
 				DEVELOPMENT_TEAM = "";
