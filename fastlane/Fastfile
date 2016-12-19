@@ -6,6 +6,7 @@ platform :ios do
 
   lane :certs do
     match(type: "development", readonly: true,app_identifier: "jp.co.lib-gate.NotifExtSmpl01")
+    match(type: "development", readonly: true,app_identifier: "jp.co.lib-gate.NotifExtSmpl01.NotificationService")
   end
 
   lane :read_wild_card do
@@ -18,6 +19,7 @@ platform :ios do
 
   lane :development do
     match(type: "development", readonly: true,app_identifier: "jp.co.lib-gate.NotifExtSmpl01")
+    match(type: "development", readonly: true,app_identifier: "jp.co.lib-gate.NotifExtSmpl01.NotificationService")
     gym(
       workspace: 'NotifExtSmpl01.xcworkspace',
       scheme: "NotifExtSmpl01",

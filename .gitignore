@@ -31,3 +31,4 @@ DerivedData
 
 # sonar
 .sonar
+fastlane/report.xml
