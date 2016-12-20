@@ -27,7 +27,7 @@ echo "Starting Pull Request analysis by SonarQube..."
 sonar-scanner -X \
               -Dsonar.login=$SONAR_TOKEN \
               -Dsonar.analysis.mode=preview \
-              -Dsonar.github.oauth=$GITHUB_TOKEN
+              -Dsonar.github.oauth=$GITHUB_TOKEN \
               -Dsonar.github.pullRequest=${ghprbPullId}
 
 # When neither on master branch nor on a non-external pull request => nothing to do
