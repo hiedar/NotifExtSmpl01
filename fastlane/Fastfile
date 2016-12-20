@@ -34,14 +34,7 @@ platform :ios do
 
   desc "Submit a new Beta Build to DeployGate"
   lane :dg do
-    match(type: "development", readonly: true,app_identifier: "jp.co.lib-gate.NotifExtSmpl01")
-    gym(
-      workspace: 'NotifExtSmpl01.xcworkspace',
-      clean: true,
-      scheme: "NotifExtSmpl01",
-      configuration: "Debug",
-      use_legacy_build_api: true
-    )
+    development
     deploygate(
         api_token: ENV['DEPLOYGATE_API_KEY'],
         user: ENV['DEPLOYGATE_USER'],
