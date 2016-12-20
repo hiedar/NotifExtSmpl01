@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var responseTextView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,21 @@ class ViewController: UIViewController {
         let url = URL(string: "https://raw.githubusercontent.com/onevcat/Kingfisher/master/images/kingfisher-1.jpg")!
         
         self.imageView.kf.setImage(with: url)
+        
+        // sonarqube non compliant code below.
+        let myNumber: Float = 0.3 + 0.6
+        if myNumber == 0.9 {
+            print("0.9!")
+        }
+        
+        if myNumber == myNumber { // always true
+            print("true")
+        } else if myNumber != myNumber  { // always false
+            print("false")
+        } else if myNumber == myNumber {
+            print("true")
+        }
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -29,6 +45,11 @@ class ViewController: UIViewController {
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(self.setTokenText(_:)),
                                                name: .tokenNotificationKey,
+                                               object: nil)
+        
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(self.setResponseText(_:)),
+                                               name: .responseNotificationKey,
                                                object: nil)
     }
     
@@ -42,6 +63,9 @@ class ViewController: UIViewController {
         
         NotificationCenter.default.removeObserver(self,
                                                   name: .tokenNotificationKey,
+                                                  object: nil)
+        NotificationCenter.default.removeObserver(self,
+                                                  name: .responseNotificationKey,
                                                   object: nil)
     }
     
@@ -81,6 +105,12 @@ class ViewController: UIViewController {
         guard let tokenText = notification.object as? String else { return }
         
         self.textView.text = tokenText
+    }
+    
+    @objc func setResponseText(_ notification: Notification) {
+        guard let responseText = notification.object as? String else { return }
+        
+        self.responseTextView.text = responseText
     }
 }
 
