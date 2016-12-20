@@ -23,20 +23,6 @@ class ViewController: UIViewController {
         
         self.imageView.kf.setImage(with: url)
         
-        // sonarqube non compliant code below.
-        let myNumber: Float = 0.3 + 0.6
-        if myNumber == 0.9 {
-            print("0.9!")
-        }
-        
-        if myNumber == myNumber { // always true
-            print("true")
-        } else if myNumber != myNumber  { // always false
-            print("false")
-        } else if myNumber == myNumber {
-            print("true")
-        }
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
