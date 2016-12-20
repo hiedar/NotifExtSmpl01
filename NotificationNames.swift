@@ -10,5 +10,6 @@ import UIKit
 
 extension Notification.Name {
     static let tokenNotificationKey = Notification.Name("SetTokenNotification")
+    static let responseNotificationKey = Notification.Name("SetResponseNotification")
 }
  

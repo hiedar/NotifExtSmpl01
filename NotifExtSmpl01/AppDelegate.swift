@@ -123,6 +123,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         if let textInputResponse = response as? UNTextInputNotificationResponse,
             response.actionIdentifier == NotificationAction.reply.identifier {
             print("userText: \(textInputResponse.userText)")
+            NotificationCenter.default.post(name: .responseNotificationKey, object: textInputResponse.userText)
         }
         
         completionHandler()
