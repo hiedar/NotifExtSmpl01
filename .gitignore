@@ -31,3 +31,6 @@ DerivedData
 
 # sonar
 .sonar
+
+# idea
+.idea

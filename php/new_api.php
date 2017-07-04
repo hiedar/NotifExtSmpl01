@@ -1,10 +1,10 @@
 <?php
 if(defined('CURL_HTTP_VERSION_2_0')){
 
-    $device_token   = 'bb15be915342ef94600365c5f8e4499c527e34ad3ce2be9343b1d8d40f1a3d08';
-    $pem_file       = '/Applications/developer/sample/NotifExtSmpl01/cert/development_jp.co.lib-gate.NotifExtSmpl01.pem';
+    $device_token   = '5d2eb270fcf447d215ff09b537142f9eb26bb7bda3abf74384615c4995bd10ad';
+    $pem_file       = '/Applications/Developer/scm/NotifExtSmpl01/cert/development_com.cocoarium.NotifExtSmpl01.pem';
     // $pem_secret     = 'your pem secret'; // パスワードを設定している場合は必要
-    $apns_topic     = 'jp.co.lib-gate.NotifExtSmpl01';
+    $apns_topic     = 'com.cocoarium.NotifExtSmpl01';
 
     $alert = '{"aps":{"alert":{"title":"TitleSample","subtitle":"SubtitleSample","body":"BodySample"},"badge": 2, "sound": "default" , "category": "todoCategoryIdentifier", "mutable-content":1}, "data": "https://raw.githubusercontent.com/onevcat/Kingfisher/master/images/kingfisher-6.jpg"}';
 
@@ -24,11 +24,10 @@ if(defined('CURL_HTTP_VERSION_2_0')){
     var_dump($httpcode);
 
     // デバッグ用
-    // $info = curl_getinfo($ch);
-    //$errno = curl_errno($ch);
-    //$error = curl_error($ch);
-
-    // var_dump($info);   
-    // var_dump($errno);
-    // var_dump($error);
+    $info = curl_getinfo($ch);
+    $errno = curl_errno($ch);
+    $error = curl_error($ch);
+    var_dump($info);
+    var_dump($errno);
+    var_dump($error);
 }
